@@ -8,24 +8,42 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   justify-content: space-between;
 }
+
+.shop {
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.shop-a {
+  text-decoration: none;
+  color: black;
+}
 .cart-logo {
-  width: 7%;
+  width: 7vw;
+  max-width: 30px;
 }
 
 .sections {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.8rem;
   display: none;
 }
 
+.nav-anc {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
 .image-container {
-  height: 35vh;
+  height: 26vh;
 }
 
 .image-container > img {
@@ -67,6 +85,7 @@
 
 .last-sec-btn {
   padding: 0.8rem 1.4rem;
+  font-size: 0.9rem;
 }
 
 .foot {
@@ -85,4 +104,99 @@
   padding: 0.9rem 1.3rem;
   background-color: black;
   color: white;
+  font-size: 0.9rem;
+}
+
+/* 
+/////ham-burger///// */
+
+.ham-logo {
+  transform: scale(1.4);
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 0.7rem;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .hamBurger-menu {
+    visibility: hidden;
+  }
+
+  .sections {
+    display: flex;
+  }
+
+  /* .image-container {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+  .last-sect {
+    max-width: 80vw;
+    margin: 0 auto;
+  } */
+}
+
+@media screen and (min-width: 1400px) {
+  .image-container {
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+
+  .last-sect {
+    max-width: 75vw;
+    margin: 0 auto;
+  }
 }
