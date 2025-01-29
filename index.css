@@ -414,3 +414,46 @@ footer {
   box-shadow: none;
   border: none;
 }
+
+@media screen and (min-width: 760px) {
+  .prod-pg-cont {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .prod-pg-descript-cont {
+    max-width: 30vw;
+    min-width: 484px;
+  }
+
+  .prod-pg-add-btn {
+    display: none;
+  }
+
+  .add-cart-btn {
+    visibility: visible;
+    width: 40%;
+    padding: 0.8rem 0;
+    border: 2px solid black;
+    background-color: white;
+  }
+
+  .prod-pg-img {
+    width: 35vw;
+  }
+
+  .prod-pg-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .prod-pg-prod-name {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .prod-pg-prod-price {
+    font-size: 1rem;
+    display: inline-block;
+  }
+}
