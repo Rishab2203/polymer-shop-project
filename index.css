@@ -398,6 +398,12 @@ select:focus {
   background-color: rgb(25, 25, 59); */
 }
 
+.add-cart-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
 footer {
   position: relative;
 }
@@ -579,6 +585,12 @@ footer {
 
 .check-btn {
   text-decoration: none;
+}
+
+.cart-pg-chck-btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 @media screen and (min-width: 760px) {
