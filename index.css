@@ -577,6 +577,10 @@ footer {
   font-size: 1.5rem;
 }
 
+.check-btn {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 760px) {
   .items-cont {
     display: none;
@@ -607,6 +611,10 @@ footer {
   .item-name {
     margin-left: 1.5rem;
     font-size: 0.9rem;
+  }
+
+  .item-size {
+    padding: 0;
   }
 }
 
