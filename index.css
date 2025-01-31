@@ -730,7 +730,7 @@ input:not(:placeholder-shown):not(:empty) + label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
   width: 100%;
 }
 
@@ -809,7 +809,9 @@ input:not(:placeholder-shown):not(:empty) + label {
 }
 
 .check:checked ~ .secondary-address-form {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 760px) {
