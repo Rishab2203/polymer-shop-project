@@ -804,6 +804,14 @@ input:not(:placeholder-shown):not(:empty) + label {
   visibility: hidden;
 }
 
+.secondary-address-form {
+  display: none;
+}
+
+.check:checked ~ .secondary-address-form {
+  display: block;
+}
+
 @media screen and (min-width: 760px) {
   .chkout-form {
     flex-direction: row;
